@@ -8,7 +8,7 @@ int Mode = 0; // 0 = Manual, 1 = Auto
 
 void setup() {
   Serial.begin(9600);
-  lcd.begin(16, 2);
+  lcd.begin();
   lcd.backlight();
   pinMode(sensor_pin, INPUT);
   pinMode(relay_pin, OUTPUT);
